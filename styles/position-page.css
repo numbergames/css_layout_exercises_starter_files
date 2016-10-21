@@ -1,11 +1,20 @@
+body {
+	/* https://css-tricks.com/perfect-full-page-background-image/ */
+	background: url("../images/outerspace_landscape.jpeg") no-repeat;
+	background-size: cover;
+	padding-top: 60px;
+}
+
+nav a:hover {
+	color: black;
+}
+
 nav {
 	background-color: grey;
 	height: 60px;
 	position: fixed;
 	width: 100%;
 	top: 0;
-	margin: 0;
-	left: 0;
 }
 
 nav img {
@@ -13,11 +22,14 @@ nav img {
 	margin: 5px 5px 0 50px;
 	border-radius: 50%;
 	border: 1px solid black;
-	vertical-align: center;
 }
 
-nav li {
+ul {
 	list-style: none;
+	vertical-align: bottom;
+}
+
+ul, li {
 	display: inline-block;
 }
 
@@ -25,29 +37,26 @@ li::after {
 	content: " | ";
 }
 
-body {
-	/* https://css-tricks.com/perfect-full-page-background-image/ */
-	background-image: url("images/outerspace_landscape.jpeg") ;
-	background-size: cover;
-}
-
-main img {
-	border-radius: 0;
-	border: 0;
-	height: 200px;
-	width: 200px;
-}
-
 .box {
 	border: 10px green dotted;
 	width: 600px;
 	height: 300px;
+	margin: 150px auto 0 auto;
+	position: relative;
+}
+
+.pet {
+	height: 200px;
+	width: 200px;
+	position: absolute;
 }
 
 .cat {
-
+	top: -100px;
+	left: -100px;
 }
 
 .dog {
-
+	right: -100px;
+	bottom: -100px;
 }

@@ -3,46 +3,6 @@ body * {
   font-family: 'Roboto', sans-serif;
 }
 
-body {
-	width: 800px;
-	margin: 60px auto 0 auto;
-	font-size: 0;
-}
-
-div {
-	border: 1px solid black;
-}
-
-.first {
-	height: 200px;
-	width: 50%;
-	display: inline-block;
-}
-
-.first.one {
-	background-color: green;
-}
-
-.first.two {
-	background-color: blue;
-}
-
-
-
-.second {
-	height: 300px;
-	width: 33.33%;
-	display: inline-block;
-}
-
-.second.one {
-	background-color: grey;
-}
-
-.second.two {
-	background-color: black;
-}
-
-.second.three {
-	background-color: orange;
+a {
+  text-decoration: none;
 }
